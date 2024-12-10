@@ -20,15 +20,6 @@
         <script type='text/javascript' src='https://billcom--messaging.sandbox.my.site.com/ESWMessagingforVerified1730416007264/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
         
         <script>
-            var userId = "005V9000004u9kfIAA";
-            
-            function callPrechatAPI() {
-                if(userId == undefined) {userId = ""}
-            	console.log ('Passing HiddenPrechatUserId = userId (currently Logged In User Id, or ' + userId + ')');
-                sessionStorage.setItem("userId", userId);
-             // Send it!
-             //	embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({'userId' : userId});
-            }
             function trapButtonClick() {
             	console.log ('Looking for embeddedMessagingConversationButton...');
             	var b = document.getElementById('embeddedMessagingConversationButton');
